@@ -1,0 +1,44 @@
+<html>
+    <head></head>
+    <body>
+        <form>
+            <h1>Connexion</h1>
+            
+            <label>Nom d'utilisateur</label>
+            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required
+            id="idNomUtilisateur">
+
+            <br/>
+            <label>Mot de passe</label>
+            <input type="password" placeholder="Entrer le mot de passe" name="password" required
+            id="idPassword">
+
+            <br/>
+            <input
+                type="submit" 
+                id='submit' 
+                value='Se connecter' >
+        </form>
+
+        <script type="text/javascript">
+            let message = "";   // Déclaration
+            let nomPersonne = "";   // Déclaration
+            let motDePassPersonne = ""; // Déclaration
+            
+            let buttonSubmit = document.getElementById("submit");
+            buttonSubmit.onclick = function(){
+                let elemNomUtilisateur = document.getElementById("idNomUtilisateur")
+                nomPersonne = elemNomUtilisateur.value
+
+                let elemMotDePass = document.getElementById("idPassword")
+                motDePassPersonne = elemMotDePass.value
+
+                message = "Bonjour " + nomPersonne +
+                ", votre mot de passe est : " + motDePassPersonne;
+
+                alert(message);
+            };
+
+        </script>
+    </body>
+</html>
