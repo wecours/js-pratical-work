@@ -1,0 +1,56 @@
+div#section-jumbotron {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 250px;
+    justify-content: center;
+}
+div#section-jumbotron > div {
+    text-align: center;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+}
+div#section-jumbotron .titre-jumbotron {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+}
+.titre-jumbotron > span{
+    font-size: 25px;
+    /* background-color: brown; */
+    padding-top: 1px;
+    padding-right: 10px;
+}
+.titre-jumbotron > h1{
+    /* background-color: blue; */
+    margin-top: 0;
+    padding-top: 0;
+}
+.content-jumbotron{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.input-custom-style-1 {
+    background-color: white;
+    height: 26px;
+    width: 230px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    border-radius: 8px;
+    box-shadow: 1px 6px 37px 5px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 1px 6px 37px 5px rgba(0,0,0,0.59);
+    -moz-box-shadow: 1px 6px 37px 5px rgba(0,0,0,0.59);
+}
+.input-custom-style-1 input {
+    width: 100%;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    margin-left: 10px;
+}
+.button-search{
+    border-radius: 0px 8px 8px 0px;
+}
